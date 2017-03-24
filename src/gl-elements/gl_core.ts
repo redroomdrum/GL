@@ -1,10 +1,12 @@
 /// <reference path="../../bower_components/DefinitelyTyped/jquery/jquery.d.ts" />
 /// <reference path="../../bower_components/DefinitelyTyped/bluebird/bluebird-2.0.d.ts" />
-/// <reference path="../../bower_components/DefinitelyTyped/log4js/log4js.d.ts" />
+/// <reference path="../../bower_components/DefinitelyTyped/log4javascript/log4javascript.d.ts"/>
 
 
 
 module GL_Core {
+
+  let log = new log4javascript.Logger();
 
   export interface IEventArgs{
 

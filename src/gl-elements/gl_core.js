@@ -10,6 +10,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var GL_Core;
 (function (GL_Core) {
+    var log = new log4javascript.Logger();
     var Event = (function () {
         function Event() {
             this._listeners = [];
