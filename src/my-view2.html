@@ -1,0 +1,76 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="/src/elements.html">
+<link rel="import" href="/src/gl-elements/gl-wrappers.html">
+<link rel="import" href="/src/gl-elements/gl-numerictextbox.html">
+<link rel="import" href="/src/gl-elements/gl-control-wrapper.html">
+<link rel="import" href="/src/gl-elements/gl-grid.html">
+<link rel="import" href="/src/gl-elements/gl-attribute.html">
+<link rel="import" href="/src/gl-elements/gl-textbox.html">
+<link rel="import" href="/src/gl-elements/gl-textbox-icon.html">
+<link rel="import" href="/src/gl-elements/gl-datepicker.html">
+<link rel="import" href="/src/gl-elements/gl-numerictextbox.html">
+<link rel="import" href="/src/gl-elements/gl-datacombobox.html">
+<link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+<dom-module id="my-view2">
+    <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <div class="circle">2</div>
+      <h1>View Two</h1>
+
+      <div class ="k-block">
+        <div class="k-header">Sign Up Form</div>
+         <div class="row">
+         <gl-attribute label = "test bblgblflbf" col = "4"  isvalidated="true" isvalid ="false" errormessage="error">
+            <gl-datepicker></gl-datepicker>
+          </gl-attribute>
+
+
+          <gl-attribute label = "test" col = "4"isvalidated="true" isvalid ="false" errormessage="error">
+            <gl-textbox></gl-textbox>
+          </gl-attribute>
+
+           <gl-attribute label = "test" col = "4"  isvalidated="true" isvalid ="false" errormessage="error">
+            <gl-textbox-icon></gl-textbox-icon>
+          </gl-attribute>
+
+           <gl-attribute label = "test" col = "4"  isvalidated="true" isvalid ="false" errormessage="error">
+            <gl-numerictextbox></gl-numerictextbox>
+          </gl-attribute>
+
+           <gl-attribute label = "test" col = "4"  isvalidated="true" isvalid ="false" errormessage="error">
+            <gl-datacombobox></gl-datacombobox>
+          </gl-attribute>
+          
+      </div>
+
+     </div>
+
+    </div>
+  </template>
+
+    <script>
+        Polymer({
+            is: 'my-view2'
+        });
+    </script>
+</dom-module>

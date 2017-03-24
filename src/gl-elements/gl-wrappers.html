@@ -1,0 +1,57 @@
+<link rel="import" href="/src/elements.html">
+
+
+<dom-module id="gl-wrapper-control-input-group">
+    <template>
+    <style include="shared-styles"></style>
+    
+    </template>
+    <script src="gl-wrapper-control-input-group.js"></script>
+</dom-module>
+
+
+
+<dom-module id="gl-wrapper-control">
+    <template>
+    <style include="shared-styles"></style>
+    <div  id ="element"  class$ ="form-group has-feedback col-md-[[col]]">
+        <label class ="control-label text-capitalize">[[label]]</label>   
+        <div> 
+            <content></content>
+        </div>
+        <small class="help-block text-right" style ="width: 100%">[[currentmessage]]</small>
+    </div>
+
+    </template>
+    <script src="gl-wrapper-control.js"></script>
+</dom-module>
+
+
+
+
+<dom-module id="gl-wrapper-collapse">
+    <template>
+   
+    <style include="shared-styles"></style>
+    <div class$ = "col-md-[[col]]">
+        <div class="panel panel-primary ">
+                <div class="panel-heading  clearfix ">
+                    <div class="pull-left"> 
+                        <a id ="icon" href="#" class="btn btn-primary fa fa-minus" on-tap="handleToggle"></a>
+                        <label class ="panel-title">{{label}}</label>
+                        <content select =".pull-left"></content>
+                    </div>
+                    <content select =".pull-right"></content>
+                </div>
+                <iron-collapse id="collapse" opened="[[opened]]">
+                    <div class="panel-body collapse-content">
+                        <content select":not(.pull-right):not(.pull-left)"></content>
+                    </div>
+                </div>
+            </iron-collapse>
+        </div>
+    </div>
+
+    </template>
+    <script src="gl-wrapper-collapse.js"></script>
+</dom-module>

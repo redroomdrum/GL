@@ -1,0 +1,30 @@
+<link rel="import" href="/src/elements.html">
+
+
+<dom-module id="gl-message">
+
+    <template>
+      <style include="shared-styles">
+              .error{
+                    color: #FF0000; 
+               }
+               .ok{
+                    color: #00FF00; 
+               }
+               .info{
+                    color: #0000FF; 
+               }
+               .trace{
+                    color: #222222; 
+               }
+
+               .disable{
+                        display: none;
+                }
+      </style>
+      <div  id = "glmessage" class="" style="width:100%">
+            <iron-icon icon="{{icon}}"></iron-icon></span> {{message}}
+      </div>
+    </template>
+    <script src="gl-message.js"></script>
+</dom-module>

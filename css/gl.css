@@ -1,0 +1,12 @@
+     .has-dirty.k-state-default {
+         background-color: #ffffcc;
+     }
+     
+     .has-error.k-state-default {
+         border-color: #b94a48 !important;
+         border-top-color: rgb(185, 74, 72)!important;
+         border-right-color: rgb(185, 74, 72)!important;
+         border-bottom-color: rgb(185, 74, 72)!important;
+         border-left-color: rgb(185, 74, 72)!important;
+         background-color: #f2dede !important;
+     }
